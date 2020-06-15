@@ -1,0 +1,295 @@
+*
+{
+  outline: none;
+  scroll-behavior: smooth;
+}
+body
+{
+  padding: 0;
+  margin: 0;
+  font-family: 'century Gothic', sans-serif;
+}
+
+header {
+  background: url('../img/landing.jpg') no-repeat; 
+  background-size: cover;
+  height: 100vh; 
+  width: 100%;
+  position: relative; 
+}
+
+ .logo
+{
+  color: #fff;
+  float: left;
+  font-size: 22px;
+}
+
+ .logo a
+{
+  float: left;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+ 
+}
+
+ .logo a:hover
+{
+  text-shadow: 0px 0px 20px #fff;
+}
+
+.navbar
+{
+  position: fixed;  
+  line-height: 48px;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  z-index: 10;
+  overflow-x: hidden;
+  box-shadow: 0px 0px 15px #000;
+}
+
+.navbar ul
+{
+  float: right;
+  list-style: none;
+  margin-right: 33px;
+}
+
+ .navbar ul li
+{
+  display: inline-block;
+  list-style: none;
+}
+
+.navbar ul li a
+{
+  padding: 0px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+ .navbar ul li a:hover
+{
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  padding: 37px 25px;
+}
+
+.navbar-toggle
+{
+  display: none;
+}
+
+header .text {
+  padding: 25% 5% ;
+  color: #fff; 
+  font-size: 25px;
+}
+
+.profile {
+  margin: 20px; 
+  box-shadow:  0px 0px 15px #bdc3c7;
+  margin-left: 30%;
+}
+
+@media(max-width: 992px)
+{
+  .logo
+  {
+    font-size: 18px;
+  }
+
+  .navbar
+  {
+    padding: 50px;
+  }
+
+  .navbar ul
+  {
+    width: 100%;
+    padding: 0;
+    max-height: 0vh;
+    height: 100vh;
+    overflow: hidden;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .navbar ul.open
+  {
+    max-height: 100vh;
+  }
+
+  .navbar ul li
+  {
+    width: 100%;
+  }
+
+  .navbar ul li a
+  {
+    font-size: 18px;
+    display: block;
+    padding: 10px 0px;
+    transition: 0.2s;
+  }
+
+  .navbar ul li a:hover
+  {
+    padding: 10px 10px;
+  }
+
+  .navbar .navbar-toggle
+  {
+    display: block;
+    position: absolute;
+    height: 30px;
+    top: 10px;
+    right: 20px;
+    background: transparent;
+    color: #fff;
+    /*border: 3px solid #fff;*/
+    border: none;
+    outline: none;
+    padding: 0 5px;
+    cursor: pointer;
+  }
+
+  nav .navbar-toggle span,
+  nav .navbar-toggle span::before,
+  nav .navbar-toggle span::after
+  {
+    display: block;
+    content: '';
+    background: #fff;
+    height: 3px;
+    width: 28px;
+    border-radius: 4px;
+    transition: all ease-in-out 0.3s;
+  }
+
+  nav .navbar-toggle span::before
+  {
+    transform: translateY(-8px);
+  }
+
+  nav .navbar-toggle span::after
+  {
+    transform: translateY(5px);
+  }
+
+  nav .navbar-toggle.open-navbar-toggle span
+  {
+    background: transparent;
+  }
+
+  nav .navbar-toggle.open-navbar-toggle span::before
+  {
+    transform: translateY(0px) rotate(45deg);
+  }
+
+  nav .navbar-toggle.open-navbar-toggle span::after
+  {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+}
+
+.carousel
+{
+  box-shadow: 10px 15px 15px #ECF0F1;
+}
+
+
+.card
+{
+
+  box-shadow: 5px 5px 5px 5px  #ECF0F1;
+  transition: ease-in-out 0.5s;
+}
+
+#serv1 {
+  background: url('../img/serv1.jpeg') no-repeat; 
+  background-size: cover; 
+  background-position: center;
+}
+
+#serv2 {
+  background: url('../img/serv2.jpeg') no-repeat; 
+  background-size: cover; 
+  background-position: center;
+}
+
+#serv3 {
+  background: url('../img/serv3.jpeg') no-repeat; 
+  background-size: cover; 
+  background-position: center;
+} 
+
+.serv {
+  border-radius: 4px;
+  margin: 3%;
+  height: 60vh; 
+  box-shadow: 0px 0px 15px #bdc3c7;
+}
+
+.serv h2{
+  color: #ECF0F1;
+}
+
+.contact {
+  padding: 20px; 
+  color: #fff; 
+}
+
+.contact h3{
+  text-decoration: underline;
+}
+
+.contact p{
+  font-size: 20px;
+}
+
+.copy {
+  padding: 20px; 
+  color: #fff; 
+}
+input[type="submit"]
+{
+  background: linear-gradient(-90deg, #8E44AD, #3498db);
+  color: #fff;
+  border: 1px solid #fff;
+    transition: ease-in-out 0.5s;
+}
+
+input[type="submit"]:hover
+{
+  box-shadow: 0px 0px 2px 2px #8E44AD;
+  border: 1px solid #8E44AD;
+  color: #fff;
+}
+
+
+footer
+{
+  height: 56vh;
+  background: linear-gradient(-90deg, #34495e, #000);
+  position: relative;
+  bottom: 0;
+  z-index: 5;
+}
+
+footer div
+{
+  color: #fff;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+footer i
+{
+  font-size: 30px;
+}
