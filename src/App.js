@@ -3,20 +3,21 @@ import Header from './components/Header';
 import Apropos from './components/Apropos'; 
 import Services from './components/Services';
 import Footer from './components/Footer'; 
-
+import { HashRouter } from "react-router-dom";
 class App extends Component { 
 
   render() {
     return ( 
-      <div> 
-        <Header /> 
-        <div class="container" >
-          <Apropos />
-          <Services /> 
+      <HashRouter basename='/'>
+        <div> 
+          <Header /> 
+          <div class="container" >
+            <Apropos />
+            <Services /> 
+          </div>
+          <Footer /> 
         </div>
-        <Footer /> 
-      </div>
-     
+      </HashRouter>
     ); 
   }
  
